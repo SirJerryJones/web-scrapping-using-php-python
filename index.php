@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Civika - HiringThing</title>
+    <title>Web Scrapper - Scrap content using PHP and Python</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -24,7 +24,7 @@
     <meta property="og:image"         content="https://d161ew7sqkx7j0.cloudfront.net/public/images/logos/17874_5725_civica_logo.png" />
     <!-- TWITTER SHARE -->
     <meta name="twitter:title" content="Web Scrapper - Scrap content using PHP and Python">
-    <meta name="twitter:description" content="Civika - HiringThing: Description goes here">
+    <meta name="twitter:description" content="Web Scrapper - Scrap content using PHP and Python">
     <meta name="twitter:image" content="https://d161ew7sqkx7j0.cloudfront.net/public/images/logos/17874_5725_civica_logo.png">
     <meta name="twitter:card" content="summary_large_image">
 </head>

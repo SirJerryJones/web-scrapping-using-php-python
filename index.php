@@ -1,60 +1,6 @@
 <?php
-    // $command = escapeshellcmd('python3 scripts/scrapper.py');
-    // $output = shell_exec($command);
-    // $jobs = json_decode($output);
-    // var_dump($jobs);
-    // exec ('python3 scripts/scrapper.py', $output);
-    // $jobs = ($output);
-    // $job_list = array();
-    // $k = 0;
-    // for($i = 0; $i <= count($jobs); $i++){
-    //     $job_list[] = explode('", "', $jobs[$i]);
-    //     $k++;
-    // }
-    // echo '<pre>';
-    // echo gettype($jobs[0]);
-    // echo $_SERVER['DOCUMENT_ROOT'] .__DIR__.'/scripts/tmp/mydict.json';die;
-    $jobs = file_get_contents('jobs.json');
+    $jobs = file_get_contents('./scripts/tmp/jobs.json');
     $jobs = json_decode($jobs);
-
-    // switch (json_last_error()) {
-    //     case JSON_ERROR_NONE:
-    //         echo ' - No errors';
-    //     break;
-    //     case JSON_ERROR_DEPTH:
-    //         echo ' - Maximum stack depth exceeded';
-    //     break;
-    //     case JSON_ERROR_STATE_MISMATCH:
-    //         echo ' - Underflow or the modes mismatch';
-    //     break;
-    //     case JSON_ERROR_CTRL_CHAR:
-    //         echo ' - Unexpected control character found';
-    //     break;
-    //     case JSON_ERROR_SYNTAX:
-    //         echo ' - Syntax error, malformed JSON';
-    //     break;
-    //     case JSON_ERROR_UTF8:
-    //         echo ' - Malformed UTF-8 characters, possibly incorrectly encoded';
-    //     break;
-    //     default:
-    //         echo ' - Unknown error';
-    //     break;
-    // }
-    // echo(gettype($jobs));
-    // echo PHP_EOL;
-    // foreach($jobs as $job){
-    //     var_dump($job);
-    // }
-    // print_r($jobs);
-    // die();
-
-//     foreach($jobs as $job){
-//         echo $job->job_title.'<br>';
-//         echo $job->job_location.'<br>';
-//         echo $job->job_description.'<br>';
-//         echo 'https://civica-inc.hiringthing.com/'.$job->job_link.'<hr>';
-//     }
-// die();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +23,7 @@
     <meta property="og:description"   content="Civika - HiringThing: Description goes here" />
     <meta property="og:image"         content="https://d161ew7sqkx7j0.cloudfront.net/public/images/logos/17874_5725_civica_logo.png" />
     <!-- TWITTER SHARE -->
-    <meta name="twitter:title" content="ECivika - HiringThing">
+    <meta name="twitter:title" content="Web Scrapper - Scrap content using PHP and Python">
     <meta name="twitter:description" content="Civika - HiringThing: Description goes here">
     <meta name="twitter:image" content="https://d161ew7sqkx7j0.cloudfront.net/public/images/logos/17874_5725_civica_logo.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -85,7 +31,7 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">CIVIKA - HiringThing</a>
+            <a href="#" class="brand-logo center">Web Scrapper - using PHP and Python</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <!-- Uncomment below ul tag if menu is needed -->
             <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">

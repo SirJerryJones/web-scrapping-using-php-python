@@ -11,7 +11,7 @@ jobs = content.find_all('div', class_='job-container')
 translator = str.maketrans({chr(10): '', chr(9): ''})
 
 job_list = []
-with codecs.open('../jobs.json','w', encoding='utf-8') as write_file:
+with codecs.open('./tmp/jobs.json','w', encoding='utf-8') as write_file:
     for job in jobs:
         if job.find('h2'):
             job_title = job.find('h2').text.translate(translator)
@@ -33,13 +33,13 @@ with codecs.open('../jobs.json','w', encoding='utf-8') as write_file:
         else:
             job_link = ''
 
-        job_dict = ("job_title":job_title,"job_location":job_location,"job_description":job_description,"job_link":job_link)
+        job_dict = {"job_title":job_title,"job_location":job_location,"job_description":job_description,"job_link":job_link}
 
         job_list.append(job_dict) 
 
         # print(job_list)
 
-        # json.dump(job_list, write_file, indent=4, ensure_ascii=False)
+        json.dump(job_dict, write_file, indent=4, ensure_ascii=False)
     # -------------------
     # fp = open('./tmp/mydict.json', 'w+')
     # json.dump(json_object, fp)
